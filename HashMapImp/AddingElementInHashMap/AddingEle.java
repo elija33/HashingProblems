@@ -2,26 +2,25 @@ package HashMapImp.AddingElementInHashMap;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 
 public class AddingEle {
     public static void AddingElement(String args[]){
     
     // Create an empty hash map
-        HashMap<Integer, String> nums = new HashMap<>();
+        HashMap<String, Integer> nums = new HashMap<>();
 
     // Adding element in to the map
-        nums.put(123, "ruth");
-        nums.put(10, "Eli");
-        nums.put(3, "Elija");
-        nums.put(10, "Eli");
+        nums.put("ruth", 5);
+        nums.put("Eli", 3);
+        nums.put("Elija", 3);
+        nums.put("Eli", 10);
 
     // Printint the size and content
         System.out.println(nums);
         System.out.println(nums.size());
 
-        
-        /*for(Map.Entry<Integer, String> name : nums.entrySet());
-            System.out.println(name.getKey() + " " + name.getValue());*/
+    // Iterating over HashMap
+    for(Map.Entry<String, Integer>name : nums.entrySet())
+        System.out.println(name.getKey() + " " + name.getValue());
     }
 }
