@@ -2,7 +2,7 @@ package UnionTwoUnsorted;
 
 import java.util.HashSet;
 
-public class NaiveUnionTwoUnsort {
+public class EfficUnionTwoUnsort {
     public static int TwoUnsort(int number[], int numbers[]){
         HashSet<Integer> nums = new HashSet<>();
         for(int i = 0; i < number.length; i++)
