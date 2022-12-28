@@ -16,7 +16,7 @@ public class DistanceOccur {
         return sum;
     }
     public static void main(String[] args) {
-        int number[] = {3, 2, 1, 2, 1, 4, 5, 8, 6, 7, 4, 2};
+        int number[] = {1, 3, 2, 1, 2, 1, 4, 5, 8, 6, 7, 4, 2, 1};
         System.out.println(Occur(number));
     }
 }
