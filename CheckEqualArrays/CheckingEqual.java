@@ -7,17 +7,17 @@ import java.util.Map;
 public class CheckingEqual {
     public static boolean equal(int arr[], int arr1[]){
        Map<Integer, Integer> freqMap1 = new HashMap<>();
-       for(int key : arr){
-        int freq = freqMap1.getOrDefault(key, 0);
+       for(int word : arr){
+        int freq = freqMap1.getOrDefault(word, 0);
         freq++;
-        freqMap1.put(key, freq);
+        freqMap1.put(word, freq);
        } 
 
        HashMap<Integer, Integer> freqMap2 = new HashMap<>();
-       for(int keys : arr1){
-        int freq = freqMap2.getOrDefault(keys, 0);
+       for(int num : arr1){
+        int freq = freqMap2.getOrDefault(num, 0);
         freq++;
-        freqMap2.put(keys, freq);
+        freqMap2.put(num, freq);
        }
 
        for(int key : freqMap1.keySet()){
@@ -51,7 +51,7 @@ public class CheckingEqual {
         return true;
     }
     public static void main(String[] args) {
-        int arr[] = {2,3,5,1,4,6,7}; 
+        int arr[] = {2,3,5,4,6,7}; 
         int arr1[] = {3,5,7,2,4,6,};
         System.out.println(equal(arr, arr1));
     }
